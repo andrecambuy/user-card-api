@@ -1,0 +1,94 @@
+.card {
+  width: 80%;
+  height: 75%;
+  max-width: 1366px;
+  max-height: 650px;
+  border-radius: 27px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.2), 0px 2px 1px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.12);
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bg-card {
+  background-image: url(../../assets/image/BGBanner.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+  flex-grow: 0;
+  border-radius: 27px 0 0 27px;
+}
+
+.btn-att {
+  width: 80px;
+  height: 80px;
+  background-image: url(../../assets/image/btn-att.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 40px;
+  margin-top: 40px;
+  transition: ease-in 0.2s;
+}
+
+.btn-att:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(360deg);
+}
+
+.card-prof-pic {
+  position: relative;
+  bottom: 10%;
+  right: 15%;
+}
+
+.card-prof-pic > img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.info {
+  flex-grow: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.card-info {
+  height: inherit;
+}
+
+.card-info-single {
+  width: 380px;
+  height: 50px;
+}
+
+.card-info-single > span {
+  border-bottom: 1px solid #b1b1b1;
+  display: block;
+  font-size: 12px;
+  color: #b1b1b1;
+  font-family: serif;
+}
+
+.card-info-single > h1 {
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.name {
+  height: 100px;
+}
+
+.name > h1 {
+  font-size: 40px;
+}
+
+/** -- responsive design -- **/
