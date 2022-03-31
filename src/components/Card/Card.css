@@ -61,10 +61,6 @@
   text-align: left;
 }
 
-.card-info {
-  height: inherit;
-}
-
 .card-info-single {
   width: 380px;
   height: 50px;
@@ -92,3 +88,80 @@
 }
 
 /** -- responsive design -- **/
+
+@media only screen and (max-width: 1280px) {
+  .card-prof-pic {
+    position: relative;
+    bottom: 0%;
+    right: 15%;
+  }
+
+  .card-info {
+    margin-right: 10%;
+    margin-left: -20%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    flex-direction: column;
+    height: 100%;
+    min-height: 680px;
+    margin: 10;
+  }
+  .bg-card {
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 27px 27px 0 0;
+    background-color: blue;
+  }
+  .card-prof-pic {
+    bottom: 13%;
+    right: 0%;
+  }
+  .info {
+    text-align: center;
+  }
+  .card-info {
+    margin-right: 0%;
+    margin-left: 0%;
+    padding-bottom: 20px;
+  }
+  .btn-att {
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    margin-top: 35px;
+    transition: ease-in 0.2s;
+  }
+}
+
+@media only screen and (max-height: 680px) and (max-width: 1024px) {
+  .bg-card {
+    /*background-image: url(../../assets/image/BGBanner.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    flex-grow: 0;
+    border-radius: 27px 0 0 27px;*/
+    background-image: none;
+    width: 100%;
+    height: 130px;
+    border-radius: 27px 27px 0 0;
+    background-color: blue;
+  }
+  .card-prof-pic {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: inherit;
+    right: inherit;
+  }
+  .info {
+    margin-top: 150px;
+  }
+}
