@@ -3,7 +3,7 @@ import "./App.css";
 import Card from "./components/Card/Card";
 
 const App = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<any>([]);
 
   const FetchUser = () => {
     fetch("https://randomuser.me/api")
@@ -22,8 +22,8 @@ const App = () => {
   return (
     <div className="App">
       <div className="bg-page">
-        {users.map((user) => {
-          return <Card key={user.cell} user={user} click={onClickHandler} />;
+        {users.map((user: any) => {
+          return <Card key={user.email} user={user} click={onClickHandler} />;
         })}
       </div>
     </div>
